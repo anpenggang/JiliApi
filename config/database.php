@@ -8,20 +8,19 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
-
 return [
     // 数据库类型
     'type'            => \think\facade\Env::get('database.type' , 'mysql'),
     // 服务器地址
-    'hostname'        => \think\facade\Env::get('database.hostname' , '127.0.0.1'),
+    'hostname'        => \think\facade\Env::get('database.hostname' , '106.14.197.61'),
     // 数据库名
-    'database'        => \think\facade\Env::get('database.database' , 'data_jiliadv_kf'),
+    'database'        => \think\facade\Env::get('database.database' , 'new_t'),
     // 用户名
-    'username'        => \think\facade\Env::get('database.username' , 'data_jiliadv_kf'),
+    'username'        => \think\facade\Env::get('database.username' , 'apg'),
     // 密码
-    'password'        => \think\facade\Env::get('database.password' , 'ze2yGrbYwLrz4fFL'),
+    'password'        => \think\facade\Env::get('database.password' , 'apgapg'),
     // 端口
-    'hostport'        => \think\facade\Env::get('database.hostport' , '3306'),
+    'hostport'        => \think\facade\Env::get('database.hostport' , '8090'),
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
