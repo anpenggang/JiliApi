@@ -91,7 +91,7 @@ class User extends Model
         }
         $drawTime = $user['draw_time'];
         if($drawTime >= date("Y-m-d 00:00:00") && $drawTime<=date("Y-m-d 23:23:23")){
-            //return true;
+            return true;
         }
 
         return false;

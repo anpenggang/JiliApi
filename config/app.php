@@ -17,7 +17,7 @@ return [
     // 应用名称
     'app_name'               => \think\facade\Env::get('app.name' , 'jiliAdv'),
     // 应用地址
-    'app_host'               => \think\facade\Env::get('app.host' , 'api.jiliadv.kaifa.fun'),
+    'app_host'               => \think\facade\Env::get('app.host' , 'wx.guangguailuli.com'),
     // 应用调试模式
     'app_debug'              => false,
     // 应用Trace
