@@ -70,6 +70,10 @@ class WinUser extends Model
                 'store' => isset($info['draw_sub_id']) ? DrawSub::getStore($info['draw_sub_id']) : 0,
                 'remark' => isset($draw['remark']) ? $draw['remark'] : "",
             ];
+
+            if (strtotime($draw['effective_end_date']) < strtotime(date('Y-m-d H:i:s'))) {
+                $info['status'] = 2; //0：未使用，1：已使用，2：已过期
+            }
         }
         if(!empty($info['activity_id'])){
             $activity = Activity::queryOne($info['activity_id']);

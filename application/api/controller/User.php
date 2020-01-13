@@ -99,8 +99,9 @@ class User extends UserBase
 //            $start = ($current - 1) * $pageSize;
             $where[] = ['user_id', '=', $this->id];
             if($type==="card"){
-                $where[] = ['status','=',0];
-                $where[] = ['personnel_id','=',0];
+//                $status = Request::param('status' , 0);        // 我的卡包（card） 中奖记录（record）
+//                $where[] = ['status','=',$status];
+//                $where[] = ['personnel_id','=',0];
             }
 
             $info = WinUserModel::queryAllData($where);
