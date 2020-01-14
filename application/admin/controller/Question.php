@@ -51,6 +51,7 @@ class Question extends AdminBase
         if(Request::isPost()){
             $data['option_a'] = Request::param('option_a' , '');
             $data['option_b'] = Request::param('option_b' , '');
+            $data['option_c'] = Request::param('option_c' , '');
             $data['option'] = Request::param('option' , '');
             $data['subject'] = Request::param('subject' , '');
             $id = Request::param('id' , 0);

@@ -17,6 +17,7 @@ class QuestionValidate extends Validate
         'subject' => 'require',
         'option_a' => 'require',
         'option_b' => 'require',
+        'option_c' => 'require',
         'option' => 'require',
     ];
 
@@ -24,11 +25,12 @@ class QuestionValidate extends Validate
         'subject.require' => '主题名称不能为空',
         'option_a.require' => '请输入A选项',
         'option_b.require' => '请输入B选项',
+        'option_c.require' => '请输入C选项',
         'option.require' => '请选择正确答案',
     ];
 
     public function sceneCreateEditQuestion(){
-        return $this->only(['subject','option_a','option_b','option']);
+        return $this->only(['subject','option_a', 'option_b', 'option_c', 'option']);
     }
 
 }
